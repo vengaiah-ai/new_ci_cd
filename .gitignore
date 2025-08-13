@@ -1,0 +1,130 @@
+# ===================================================================
+# General
+# ===================================================================
+
+# IDE and editor files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*~
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Log files
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# ===================================================================
+# Backend (Python)
+# ===================================================================
+
+# Virtual Environment
+venv/
+env/
+ENV/
+pilotenv/
+.python-version
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ===================================================================
+# Frontend (Node.js)
+# ===================================================================
+
+# Dependencies
+/frontend/node_modules/
+/frontend/.pnp
+.pnp.*
+
+# Build outputs
+/frontend/build/
+/frontend/dist/
+/frontend/.next/
+/frontend/out/
+/frontend/.nuxt/
+/frontend/.output/
+/frontend/.svelte-kit/
+
+# Caches
+/frontend/.cache/
+/frontend/.temp/
+/frontend/.tmp/
+/frontend/.vite/
+/frontend/.eslintcache
+
+# Local development
+/frontend/.env
+/frontend/.env.*
+!/frontend/.env.example
+/frontend/.vercel/
+/frontend/.netlify/
+
+# Testing
+/frontend/coverage/
+
+# Debug logs
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# Other
+/frontend/*.tgz
+/frontend/.node_repl_history
+
+# Backend specific config and data files
+/backend/scan_config.yml
+/backend/variables.json
+/backend/aws_credentials.json
+/backend/pipeline_config.json
+/backend/build_history.json
+
+# Vite timestamp files
+/frontend/vite.config.ts.timestamp-*.mjs

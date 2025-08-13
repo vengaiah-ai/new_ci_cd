@@ -1,0 +1,47 @@
+# -----------------------------------------------------------------------------
+# Core Application & Frameworks
+#
+# FastAPI is our web framework. Uvicorn is the ASGI server to run it.
+# Pydantic is critical for data validation in both FastAPI and LangChain.
+# We are pinning Pydantic to a specific version compatible with both to avoid
+# conflicts between its v1 and v2 APIs.
+# -----------------------------------------------------------------------------
+fastapi~=0.111.0
+uvicorn[standard]~=0.29.0
+pydantic~=2.7.4
+
+# -----------------------------------------------------------------------------
+# AI & LangChain Orchestration
+#
+# These packages form the core of the LLM agent. We pin them to recent,
+# stable versions that are known to be compatible with each other.
+# -----------------------------------------------------------------------------
+langchain~=0.1.20
+langchain-groq~=0.1.3
+groq~=0.6.0
+
+# -----------------------------------------------------------------------------
+# Cloud & Containerization SDKs
+#
+# These are the official SDKs for interacting with AWS and Docker.
+# They are generally stable, so we can be a bit more flexible, but
+# pinning the major version is still a good practice.
+# -----------------------------------------------------------------------------
+boto3~=1.34.0
+docker~=7.1.0
+
+# -----------------------------------------------------------------------------
+# Utility Packages
+#
+# python-dotenv is used for managing environment variables from a .env file.
+# It has a stable API, so pinning the major version is sufficient.
+# -----------------------------------------------------------------------------
+python-dotenv~=1.0.1
+
+# -----------------------------------------------------------------------------
+# Optional Packages
+#
+# Uncomment the following line if you need to perform Git operations
+# directly from your Python code.
+# -----------------------------------------------------------------------------
+# gitpython~=3.1.43
